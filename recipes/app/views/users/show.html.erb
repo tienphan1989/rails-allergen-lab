@@ -1,8 +1,12 @@
 <h1>Recipes that have been authored</h1>
 
+<% @user.recipes.each do |recipe| %><br>
+<%= recipe.name %>
+<%end%>
 
 
+<%= link_to "Go back to Index", users_path%><br>
 
+<%= link_to "Edit", edit_user_path(@user)%>
 
-
-
+<%= button_to "Delete", "http://localhost:3000/users/#{@user.id}", method: :delete %>
