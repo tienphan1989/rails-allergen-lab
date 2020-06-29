@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, :ingredients, :recipes, :recipe_ingredients, :allergens
+  resources :users, :ingredients, :recipes
   # get 'recipes/new'
   # get 'recipes/create'
   # get 'recipes/edit'
